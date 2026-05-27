@@ -1,6 +1,9 @@
 package com.problems.design.stack;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
 
 class Stack <T> {
     ArrayList<T> elements;
@@ -43,6 +46,12 @@ public class Client {
         st.pop();
         st.push(7);
         System.out.println(st.peak());
+    }
 
+    public static int getPoint(Character c){
+        if('a' <= c && c <= 'z') return 1;
+        else if ('A' <= c && c <= 'Z') return 2;
+        else if ('0' <= c && c >= '9') return 3;
+        else return 5;
     }
 }

@@ -8,19 +8,19 @@ import java.util.concurrent.Executors;
 public class Client {
     public static void main(String[] args) {
         System.out.println("Singleton Logger Class!");
-        /*Logger log = Logger.getLoggerInstance();
+        Logger log = Logger.getLoggerInstance();
 
         System.out.println("Client class logger hashcode: " + log.hashCode());
 
-        Service.doSomething();*/
+        Service.doSomething();
 
-        /*log.info("Size of list: 10");
+        log.info("Size of list: 10");
         log.error("An error occurred while opening file! ");
-        log.debug("We need to debug this program");*/
+        log.debug("We need to debug this program");
 
 
         // Let's Break Singleton Pattern
-        Logger log1 = Logger.getLoggerInstance();
+        /*Logger log1 = Logger.getLoggerInstance();
         try {
             Constructor<Logger> constructor = Logger.class.getDeclaredConstructor();
             constructor.setAccessible(true);
@@ -34,7 +34,7 @@ public class Client {
             throw new RuntimeException(e);
         } catch (IllegalAccessException e) {
             throw new RuntimeException(e);
-        }
+        }*/
 
 
     }
